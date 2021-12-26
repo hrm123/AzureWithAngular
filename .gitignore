@@ -51,3 +51,7 @@ Thumbs.db
 environment.prod.ts
 environment.ts
 
+
+# angular cache files
+
+.angular/*

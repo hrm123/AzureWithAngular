@@ -4,7 +4,7 @@ import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+import environment from '../environments/environment';
 import { LayoutDynamicComponent } from './nav/layout-dynamic/layout-dynamic.component';
 import { HeaderDesktopComponent } from './nav/header-desktop/header-desktop.component';
 import { HeaderDirective } from './nav/header.directive';
