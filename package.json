@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "config": "ts-node ./src/assets/scripts/setEnv.ts",
+    "config": "ts-node ./src/assets/setEnv.ts",
     "start": "npm run config -- --environment=prod &&  ng serve --proxy-config ./proxy.json --live-reload true",
     "mockserver": "ts-node -P ./server/server.tsconfig.json ./server/server.ts",
     "build": "ng build",
