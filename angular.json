@@ -25,8 +25,7 @@
             "assets": ["src/favicon.ico", "src/assets", "src/manifest.webmanifest", "src/manifest.webmanifest", "src/manifest.webmanifest", "src/manifest.webmanifest", "src/manifest.webmanifest"],
             "styles": ["./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css", "src/styles.css"],
             "scripts": [],
-            "serviceWorker": true,
-            "ngswConfigPath": "src/ngsw-config.json"
+            "serviceWorker": true
           },
           "configurations": {
             "production": {
