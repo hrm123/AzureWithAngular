@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --proxy-config ./proxy.json --live-reload true",
+    "config": "ts-node ./src/assets/scripts/setEnv.ts",
+    "start": "npm run config -- --environment=prod &&  ng serve --proxy-config ./proxy.json --live-reload true",
     "mockserver": "ts-node -P ./server/server.tsconfig.json ./server/server.ts",
     "build": "ng build",
     "start:prod": "ng build --prod && cd dist && http-server -c-1 -P http://localhost:9000 .",
@@ -51,6 +52,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.5.2"
+    "typescript": "~4.5.2",
+    "yargs": "^17.3.1"
   }
 }
