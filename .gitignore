@@ -49,7 +49,7 @@ Thumbs.db
 # Angular environment variables
 
 environment.prod.ts
-environment.ts
+environment.dev.ts
 
 
 # angular cache files
