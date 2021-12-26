@@ -23,6 +23,16 @@
 </head>
 <body class="mat-typography">
   <app-root></app-root>
+  <main>
+    <h1>Vanilla JavaScript App</h1>
+    <p>Loading content from the API: <b id="name">...</b></p>
+    </main>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
+  <script>
+    (async function() {
+        const { text } = await( await fetch(`/api/todo`)).json();
+        document.querySelector('#name').textContent = text;
+    }())
+    </script>
 </body>
 </html>
