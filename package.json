@@ -6,7 +6,7 @@
     "config": "ts-node ./src/assets/setEnv.ts",
     "start": "npm run config -- --environment=prod &&  ng serve --proxy-config ./proxy.json --live-reload true",
     "mockserver": "ts-node -P ./server/server.tsconfig.json ./server/server.ts",
-    "build": "ng build",
+    "build": "npm run config -- --environment=prod && ng build",
     "start:prod": "ng build --prod && cd dist && http-server -c-1 -P http://localhost:9000 .",
     "test": "ng test",
     "lint": "ng lint",
